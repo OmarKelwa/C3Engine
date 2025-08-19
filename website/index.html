@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C3 Engine — Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <meta name="description" content="Landing page for C3 Engine builds (HTML5, Android, iOS, macOS, Windows, Flash)">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="brand">
+                <span class="brand__logo">C3</span>
+                <span class="brand__name">Engine</span>
+            </div>
+            <nav class="nav">
+                <button id="langToggle" class="btn btn--ghost" aria-label="Toggle language">AR / EN</button>
+                <a class="btn" href="#downloads">تنزيلات</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__text">
+                    <h1 data-ar="محرك C3 — حزمة المنصات" data-en="C3 Engine — Multi‑platform Bundle" class="i18n">محرك C3 — حزمة المنصات</h1>
+                    <p data-ar="هذه الصفحة تعرض ملفات المحرك الجاهزة لمنصات متعددة الموجودة داخل المستودع لديك. يمكنك تنزيل الحزم أو تصفح المجلدات مباشرة." data-en="This page surfaces the engine artifacts already in your repo for multiple targets. Browse folders or download builds directly.
+                    " class="i18n">هذه الصفحة تعرض ملفات المحرك الجاهزة لمنصات متعددة الموجودة داخل المستودع لديك. يمكنك تنزيل الحزم أو تصفح المجلدات مباشرة.</p>
+                    <div class="hero__cta">
+                        <a href="#downloads" class="btn btn--primary i18n" data-ar="اذهب إلى التنزيلات" data-en="Go to downloads">اذهب إلى التنزيلات</a>
+                        <a href="./builds/C3Engine_HTML5/" class="btn btn--ghost i18n" data-ar="مجلد HTML5" data-en="HTML5 folder">مجلد HTML5</a>
+                    </div>
+                </div>
+                <div class="hero__art" aria-hidden="true">
+                    <div class="art__grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="i18n" data-ar="عن المشروع" data-en="About the project">عن المشروع</h2>
+                <p class="i18n" data-ar="هذا موقع ثابت بسيط يعرض محتويات مجلدات محرك C3 الموجودة داخل هذا العمل. لتشغيل ديمو WebGL/HTML5 قد تحتاج إلى خطوة بناء إضافية، لكن يمكنك تصفح الملفات الآن." data-en="This is a simple static site that highlights the C3 engine folders present in this workspace. Running a WebGL/HTML5 demo may require an additional build step, but you can browse the artifacts now.">هذا موقع ثابت بسيط يعرض محتويات مجلدات محرك C3 الموجودة داخل هذا العمل. لتشغيل ديمو WebGL/HTML5 قد تحتاج إلى خطوة بناء إضافية، لكن يمكنك تصفح الملفات الآن.</p>
+            </div>
+        </section>
+
+        <section id="downloads" class="section">
+            <div class="container">
+                <h2 class="i18n" data-ar="التنزيلات والمنصات" data-en="Downloads & Platforms">التنزيلات والمنصات</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>HTML5 / JS WebGL</h3>
+                        <p class="muted">C3Engine_HTML5</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_HTML5/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Android (GL2)</h3>
+                        <p class="muted">C3Engine_Android_GL2</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_Android_GL2/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>iOS (iPad + iPhone)</h3>
+                        <p class="muted">C3_iPad+iPhone_Device_Release</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3_iPad+iPhone_Device_Release/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>iOS Simulator (iOS 5)</h3>
+                        <p class="muted">C3_iPad+iPhone_Sim_Debug_iOS5</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3_iPad+iPhone_Sim_Debug_iOS5/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>iOS Simulator</h3>
+                        <p class="muted">C3_iPad+iPhone_Sim_Debug</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3_iPad+iPhone_Sim_Debug/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Windows (OpenGL 2)</h3>
+                        <p class="muted">C3Engine_Windows_GL2</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_Windows_GL2/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>macOS (OpenGL 2)</h3>
+                        <p class="muted">C3Engine_MacOSX_GL2</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_MacOSX_GL2/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Windows Phone 8</h3>
+                        <p class="muted">C3Engine_WindowsPhone8</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_WindowsPhone8/">Open folder</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <h3>Flash</h3>
+                        <p class="muted">C3Engine_Flash</p>
+                        <div class="card__actions">
+                            <a class="btn btn--primary" href="./builds/C3Engine_Flash/">Open folder</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="tip i18n" data-ar="ملاحظة: قد يلزم إعداد أدوات تطوير خاصة بكل منصة لفتح أو تشغيل بعض المشاريع (Xcode/Android Studio/Visual Studio...)." data-en="Note: Opening some projects may require platform-specific toolchains (Xcode/Android Studio/Visual Studio...).">ملاحظة: قد يلزم إعداد أدوات تطوير خاصة بكل منصة لفتح أو تشغيل بعض المشاريع (Xcode/Android Studio/Visual Studio...).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span class="muted">© <span id="year"></span> C3 Engine</span>
+            <a class="muted" href="#about">About</a>
+        </div>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+</body>
+</html>
+
